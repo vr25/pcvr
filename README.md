@@ -1,12 +1,8 @@
-# PCVR: code and data
-
-Artifact accompanying **Preservation-Constrained Visual Repair:
-Evaluating Complete Sets of Scene Interventions**.
+# PCVR: Preservation-Constrained Visual Repair: Evaluating Complete Sets of Scene Interventions
 
 PCVR asks for every valid scene intervention, all minimum-cost repairs,
 a no-solution verdict, and per-candidate preservation violations.
-This package contains the experiment code and data used in the paper,
-not the manuscript or its LaTeX build files.
+This package contains the experiment code and data used in the paper.
 
 ## Contents
 
