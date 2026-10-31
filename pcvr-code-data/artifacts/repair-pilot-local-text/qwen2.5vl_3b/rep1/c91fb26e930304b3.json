@@ -1,0 +1,9 @@
+{
+  "model": "qwen2.5vl:3b",
+  "replicate": 1,
+  "temperature": 0.7,
+  "seed": 1,
+  "example_id": "c91fb26e930304b3",
+  "seconds": 12.8,
+  "raw": "{\"candidate_violations\": {\"A\": [\"target\", \"exit\"], \"B\": [\"target\", \"exit\"], \"C\": [\"target\", \"exit\"], \"D\": [\"target\", \"exit\"], \"E\": [\"target\", \"exit\"], \"F\": [\"target\", \"exit\"]}, \"valid_interventions\": [], \"minimum_cost_interventions\": [], \"no_solution\": true}"
+}

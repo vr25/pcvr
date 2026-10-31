@@ -1,0 +1,111 @@
+{
+  "examples": 12,
+  "accuracy": {
+    "full_repair_set_exact": 1.0,
+    "minimum_set_exact": 1.0,
+    "no_solution_correct": 1.0,
+    "candidate_violation_set_exact": 1.0
+  },
+  "valid_repair_precision": 1.0,
+  "valid_repair_recall": 1.0,
+  "counts": {
+    "true_positive": 15,
+    "false_positive": 0,
+    "false_negative": 0
+  },
+  "per_example": {
+    "8b8bfc0d612b24a9": {
+      "full_repair_set_exact": true,
+      "minimum_set_exact": true,
+      "no_solution_correct": true,
+      "candidate_violation_set_exact": true
+    },
+    "c88f2181037862af": {
+      "full_repair_set_exact": true,
+      "minimum_set_exact": true,
+      "no_solution_correct": true,
+      "candidate_violation_set_exact": true
+    },
+    "e3304d31fa10d720": {
+      "full_repair_set_exact": true,
+      "minimum_set_exact": true,
+      "no_solution_correct": true,
+      "candidate_violation_set_exact": true
+    },
+    "840f980ccf66a5c1": {
+      "full_repair_set_exact": true,
+      "minimum_set_exact": true,
+      "no_solution_correct": true,
+      "candidate_violation_set_exact": true
+    },
+    "8a0f125220ed20ef": {
+      "full_repair_set_exact": true,
+      "minimum_set_exact": true,
+      "no_solution_correct": true,
+      "candidate_violation_set_exact": true
+    },
+    "c91fb26e930304b3": {
+      "full_repair_set_exact": true,
+      "minimum_set_exact": true,
+      "no_solution_correct": true,
+      "candidate_violation_set_exact": true
+    },
+    "00b26311761f5323": {
+      "full_repair_set_exact": true,
+      "minimum_set_exact": true,
+      "no_solution_correct": true,
+      "candidate_violation_set_exact": true
+    },
+    "cd17ffcecd61a049": {
+      "full_repair_set_exact": true,
+      "minimum_set_exact": true,
+      "no_solution_correct": true,
+      "candidate_violation_set_exact": true
+    },
+    "6957c7f77e311d56": {
+      "full_repair_set_exact": true,
+      "minimum_set_exact": true,
+      "no_solution_correct": true,
+      "candidate_violation_set_exact": true
+    },
+    "dcbb2ace3ed2e70c": {
+      "full_repair_set_exact": true,
+      "minimum_set_exact": true,
+      "no_solution_correct": true,
+      "candidate_violation_set_exact": true
+    },
+    "6309a98518df93bf": {
+      "full_repair_set_exact": true,
+      "minimum_set_exact": true,
+      "no_solution_correct": true,
+      "candidate_violation_set_exact": true
+    },
+    "1e58d756c9970d95": {
+      "full_repair_set_exact": true,
+      "minimum_set_exact": true,
+      "no_solution_correct": true,
+      "candidate_violation_set_exact": true
+    }
+  },
+  "matched_pairs": [
+    {
+      "family": "kitchen",
+      "cosmetic_invariance": true,
+      "cosmetic_both_correct": true,
+      "relevant_edit_both_correct": true
+    },
+    {
+      "family": "workshop",
+      "cosmetic_invariance": true,
+      "cosmetic_both_correct": true,
+      "relevant_edit_both_correct": true
+    },
+    {
+      "family": "storage",
+      "cosmetic_invariance": true,
+      "cosmetic_both_correct": true,
+      "relevant_edit_both_correct": true
+    }
+  ],
+  "configured_model_id": "gpt-6.1-sol"
+}

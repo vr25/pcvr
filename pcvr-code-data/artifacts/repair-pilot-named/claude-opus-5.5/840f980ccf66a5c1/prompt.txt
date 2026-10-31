@@ -1,0 +1,24 @@
+You are a vision-language solver in an experimental trial.
+Read ONLY this trial's request.json and the ONE image it lists. Do not read
+other trials, dataset-wide metadata, generator code, tests, README, private
+labels, reports, history, or session artifacts. Do not delegate.
+Use the image viewing tool on the full-resolution PNG. Make visual judgments;
+do not use scripts to extract pixels, geometry, or answers. Read the public
+rules carefully. This is a fresh trial: no other scene should enter this context.
+Do not infer 3D physics beyond the declared 2D clearance task.
+
+Save your decisions using apply_patch to this trial's response.json. Return
+exactly {"examples": [ENTRY]}, with exactly one ENTRY containing:
+example_id, valid_interventions, minimum_cost_interventions, no_solution,
+candidate_violations. Copy example_id from the request. Lists contain unique
+candidate letters. no_solution is a boolean. candidate_violations maps EVERY
+candidate letter to a list of ALL violated categories: target, destination,
+exit, furniture, boundary. Use [] when a candidate violates none.
+Your valid_interventions must be exactly the candidates with no violations.
+Your minimum_cost_interventions must be all lowest-public-cost members of
+that valid set. no_solution must be true exactly when the valid set is empty.
+No alternative moves, rotations, explanations, markdown, or extra JSON keys.
+Do not inspect gold or change predictions after any evaluation feedback.
+STOP after writing response.json and briefly confirming the path.
+
+Trial directory: artifacts/repair-pilot-named/claude-opus-5.5/840f980ccf66a5c1

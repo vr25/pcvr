@@ -1,0 +1,9 @@
+{
+  "model": "qwen2.5vl:32b",
+  "replicate": 0,
+  "temperature": 0.0,
+  "seed": 0,
+  "example_id": "1e58d756c9970d95",
+  "seconds": 82.4,
+  "raw": "{\"candidate_violations\": {\"A\": [\"destination\", \"furniture\"], \"B\": [\"target\", \"furniture\"], \"C\": [\"target\", \"furniture\"], \"D\": [\"target\", \"furniture\"], \"E\": [\"target\", \"destination\", \"exit\", \"furniture\"], \"F\": [\"destination\", \"furniture\"]}, \"valid_interventions\": [], \"minimum_cost_interventions\": [], \"no_solution\": true}"
+}

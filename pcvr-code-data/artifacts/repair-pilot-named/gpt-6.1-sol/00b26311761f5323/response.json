@@ -1,0 +1,1 @@
+{"examples":[{"example_id":"00b26311761f5323","valid_interventions":["A"],"minimum_cost_interventions":["A"],"no_solution":false,"candidate_violations":{"A":[],"B":["furniture"],"C":["target"],"D":["destination"],"E":["exit"],"F":["furniture"]}}]}

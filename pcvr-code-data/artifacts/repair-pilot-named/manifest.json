@@ -1,0 +1,206 @@
+{
+  "models": [
+    "gpt-6.1-sol",
+    "claude-opus-5.5"
+  ],
+  "trial_count": 24,
+  "method": "One new Copilot task agent per image; explicit model selection.",
+  "blinding": "Instruction-based; not a filesystem sandbox.",
+  "settings": "Harness defaults; temperature and provider sampling controls not exposed.",
+  "runtime_model_resolution": "Configured IDs archived; provider-resolved versions not exposed.",
+  "prompt_archive": "Trial instructions and public requests; harness system prompts not archived.",
+  "trials": [
+    {
+      "configured_model_id": "gpt-6.1-sol",
+      "example_id": "8b8bfc0d612b24a9",
+      "prompt": "artifacts/repair-pilot-named/gpt-6.1-sol/8b8bfc0d612b24a9/prompt.txt",
+      "request": "artifacts/repair-pilot-named/gpt-6.1-sol/8b8bfc0d612b24a9/request.json",
+      "response": "artifacts/repair-pilot-named/gpt-6.1-sol/8b8bfc0d612b24a9/response.json",
+      "image_sha256": "ac238c0c4192437561146274b115316d3cb3a95d581ae8548669f904ceff02eb"
+    },
+    {
+      "configured_model_id": "gpt-6.1-sol",
+      "example_id": "c88f2181037862af",
+      "prompt": "artifacts/repair-pilot-named/gpt-6.1-sol/c88f2181037862af/prompt.txt",
+      "request": "artifacts/repair-pilot-named/gpt-6.1-sol/c88f2181037862af/request.json",
+      "response": "artifacts/repair-pilot-named/gpt-6.1-sol/c88f2181037862af/response.json",
+      "image_sha256": "b0cb6098649e5d449af0d47f4686fff0d909bbed3ed0579849bf68d812da957b"
+    },
+    {
+      "configured_model_id": "gpt-6.1-sol",
+      "example_id": "e3304d31fa10d720",
+      "prompt": "artifacts/repair-pilot-named/gpt-6.1-sol/e3304d31fa10d720/prompt.txt",
+      "request": "artifacts/repair-pilot-named/gpt-6.1-sol/e3304d31fa10d720/request.json",
+      "response": "artifacts/repair-pilot-named/gpt-6.1-sol/e3304d31fa10d720/response.json",
+      "image_sha256": "b6606930307c6da179f8d5f4305e2bc4a7fe37362c120b08344d91d1da9ec6e3"
+    },
+    {
+      "configured_model_id": "gpt-6.1-sol",
+      "example_id": "840f980ccf66a5c1",
+      "prompt": "artifacts/repair-pilot-named/gpt-6.1-sol/840f980ccf66a5c1/prompt.txt",
+      "request": "artifacts/repair-pilot-named/gpt-6.1-sol/840f980ccf66a5c1/request.json",
+      "response": "artifacts/repair-pilot-named/gpt-6.1-sol/840f980ccf66a5c1/response.json",
+      "image_sha256": "472e1fada37a49c1c0a24b6dc428957e2af961ca9873beda50823e782eee1154"
+    },
+    {
+      "configured_model_id": "gpt-6.1-sol",
+      "example_id": "8a0f125220ed20ef",
+      "prompt": "artifacts/repair-pilot-named/gpt-6.1-sol/8a0f125220ed20ef/prompt.txt",
+      "request": "artifacts/repair-pilot-named/gpt-6.1-sol/8a0f125220ed20ef/request.json",
+      "response": "artifacts/repair-pilot-named/gpt-6.1-sol/8a0f125220ed20ef/response.json",
+      "image_sha256": "cd3c590bd91d8b322f5d448fc08f3474730f29eb19d0e159a4fed20d5dbc94f8"
+    },
+    {
+      "configured_model_id": "gpt-6.1-sol",
+      "example_id": "c91fb26e930304b3",
+      "prompt": "artifacts/repair-pilot-named/gpt-6.1-sol/c91fb26e930304b3/prompt.txt",
+      "request": "artifacts/repair-pilot-named/gpt-6.1-sol/c91fb26e930304b3/request.json",
+      "response": "artifacts/repair-pilot-named/gpt-6.1-sol/c91fb26e930304b3/response.json",
+      "image_sha256": "fa246aad735da43a7785a1a4d71548ff0dca6c7886e0da7984e516196b7a3b23"
+    },
+    {
+      "configured_model_id": "gpt-6.1-sol",
+      "example_id": "00b26311761f5323",
+      "prompt": "artifacts/repair-pilot-named/gpt-6.1-sol/00b26311761f5323/prompt.txt",
+      "request": "artifacts/repair-pilot-named/gpt-6.1-sol/00b26311761f5323/request.json",
+      "response": "artifacts/repair-pilot-named/gpt-6.1-sol/00b26311761f5323/response.json",
+      "image_sha256": "2df1e691623a1053271020b4e6119ebd351c51511b603a8079c036632a681357"
+    },
+    {
+      "configured_model_id": "gpt-6.1-sol",
+      "example_id": "cd17ffcecd61a049",
+      "prompt": "artifacts/repair-pilot-named/gpt-6.1-sol/cd17ffcecd61a049/prompt.txt",
+      "request": "artifacts/repair-pilot-named/gpt-6.1-sol/cd17ffcecd61a049/request.json",
+      "response": "artifacts/repair-pilot-named/gpt-6.1-sol/cd17ffcecd61a049/response.json",
+      "image_sha256": "e92c6a323b4876595d168f0f3b56b74c0c492cd39c1e66f0b68089daa5666dd9"
+    },
+    {
+      "configured_model_id": "gpt-6.1-sol",
+      "example_id": "6957c7f77e311d56",
+      "prompt": "artifacts/repair-pilot-named/gpt-6.1-sol/6957c7f77e311d56/prompt.txt",
+      "request": "artifacts/repair-pilot-named/gpt-6.1-sol/6957c7f77e311d56/request.json",
+      "response": "artifacts/repair-pilot-named/gpt-6.1-sol/6957c7f77e311d56/response.json",
+      "image_sha256": "241359c33c80553904d46c3154c541db1acc396ce3188fdeafd0ca427dc1f841"
+    },
+    {
+      "configured_model_id": "gpt-6.1-sol",
+      "example_id": "dcbb2ace3ed2e70c",
+      "prompt": "artifacts/repair-pilot-named/gpt-6.1-sol/dcbb2ace3ed2e70c/prompt.txt",
+      "request": "artifacts/repair-pilot-named/gpt-6.1-sol/dcbb2ace3ed2e70c/request.json",
+      "response": "artifacts/repair-pilot-named/gpt-6.1-sol/dcbb2ace3ed2e70c/response.json",
+      "image_sha256": "8618a45e7d9f26dcd9bacc3bce8168104435a8c978688ad116370441c8ef92a1"
+    },
+    {
+      "configured_model_id": "gpt-6.1-sol",
+      "example_id": "6309a98518df93bf",
+      "prompt": "artifacts/repair-pilot-named/gpt-6.1-sol/6309a98518df93bf/prompt.txt",
+      "request": "artifacts/repair-pilot-named/gpt-6.1-sol/6309a98518df93bf/request.json",
+      "response": "artifacts/repair-pilot-named/gpt-6.1-sol/6309a98518df93bf/response.json",
+      "image_sha256": "76bdad5d26701d9505b0e06539c96aa6727886318cfb92af3040c08cbaed1083"
+    },
+    {
+      "configured_model_id": "gpt-6.1-sol",
+      "example_id": "1e58d756c9970d95",
+      "prompt": "artifacts/repair-pilot-named/gpt-6.1-sol/1e58d756c9970d95/prompt.txt",
+      "request": "artifacts/repair-pilot-named/gpt-6.1-sol/1e58d756c9970d95/request.json",
+      "response": "artifacts/repair-pilot-named/gpt-6.1-sol/1e58d756c9970d95/response.json",
+      "image_sha256": "0a86dc834cc04a5f99a8549530237e82e037a279e76b4b8eb2af54564655ae52"
+    },
+    {
+      "configured_model_id": "claude-opus-5.5",
+      "example_id": "8b8bfc0d612b24a9",
+      "prompt": "artifacts/repair-pilot-named/claude-opus-5.5/8b8bfc0d612b24a9/prompt.txt",
+      "request": "artifacts/repair-pilot-named/claude-opus-5.5/8b8bfc0d612b24a9/request.json",
+      "response": "artifacts/repair-pilot-named/claude-opus-5.5/8b8bfc0d612b24a9/response.json",
+      "image_sha256": "ac238c0c4192437561146274b115316d3cb3a95d581ae8548669f904ceff02eb"
+    },
+    {
+      "configured_model_id": "claude-opus-5.5",
+      "example_id": "c88f2181037862af",
+      "prompt": "artifacts/repair-pilot-named/claude-opus-5.5/c88f2181037862af/prompt.txt",
+      "request": "artifacts/repair-pilot-named/claude-opus-5.5/c88f2181037862af/request.json",
+      "response": "artifacts/repair-pilot-named/claude-opus-5.5/c88f2181037862af/response.json",
+      "image_sha256": "b0cb6098649e5d449af0d47f4686fff0d909bbed3ed0579849bf68d812da957b"
+    },
+    {
+      "configured_model_id": "claude-opus-5.5",
+      "example_id": "e3304d31fa10d720",
+      "prompt": "artifacts/repair-pilot-named/claude-opus-5.5/e3304d31fa10d720/prompt.txt",
+      "request": "artifacts/repair-pilot-named/claude-opus-5.5/e3304d31fa10d720/request.json",
+      "response": "artifacts/repair-pilot-named/claude-opus-5.5/e3304d31fa10d720/response.json",
+      "image_sha256": "b6606930307c6da179f8d5f4305e2bc4a7fe37362c120b08344d91d1da9ec6e3"
+    },
+    {
+      "configured_model_id": "claude-opus-5.5",
+      "example_id": "840f980ccf66a5c1",
+      "prompt": "artifacts/repair-pilot-named/claude-opus-5.5/840f980ccf66a5c1/prompt.txt",
+      "request": "artifacts/repair-pilot-named/claude-opus-5.5/840f980ccf66a5c1/request.json",
+      "response": "artifacts/repair-pilot-named/claude-opus-5.5/840f980ccf66a5c1/response.json",
+      "image_sha256": "472e1fada37a49c1c0a24b6dc428957e2af961ca9873beda50823e782eee1154"
+    },
+    {
+      "configured_model_id": "claude-opus-5.5",
+      "example_id": "8a0f125220ed20ef",
+      "prompt": "artifacts/repair-pilot-named/claude-opus-5.5/8a0f125220ed20ef/prompt.txt",
+      "request": "artifacts/repair-pilot-named/claude-opus-5.5/8a0f125220ed20ef/request.json",
+      "response": "artifacts/repair-pilot-named/claude-opus-5.5/8a0f125220ed20ef/response.json",
+      "image_sha256": "cd3c590bd91d8b322f5d448fc08f3474730f29eb19d0e159a4fed20d5dbc94f8"
+    },
+    {
+      "configured_model_id": "claude-opus-5.5",
+      "example_id": "c91fb26e930304b3",
+      "prompt": "artifacts/repair-pilot-named/claude-opus-5.5/c91fb26e930304b3/prompt.txt",
+      "request": "artifacts/repair-pilot-named/claude-opus-5.5/c91fb26e930304b3/request.json",
+      "response": "artifacts/repair-pilot-named/claude-opus-5.5/c91fb26e930304b3/response.json",
+      "image_sha256": "fa246aad735da43a7785a1a4d71548ff0dca6c7886e0da7984e516196b7a3b23"
+    },
+    {
+      "configured_model_id": "claude-opus-5.5",
+      "example_id": "00b26311761f5323",
+      "prompt": "artifacts/repair-pilot-named/claude-opus-5.5/00b26311761f5323/prompt.txt",
+      "request": "artifacts/repair-pilot-named/claude-opus-5.5/00b26311761f5323/request.json",
+      "response": "artifacts/repair-pilot-named/claude-opus-5.5/00b26311761f5323/response.json",
+      "image_sha256": "2df1e691623a1053271020b4e6119ebd351c51511b603a8079c036632a681357"
+    },
+    {
+      "configured_model_id": "claude-opus-5.5",
+      "example_id": "cd17ffcecd61a049",
+      "prompt": "artifacts/repair-pilot-named/claude-opus-5.5/cd17ffcecd61a049/prompt.txt",
+      "request": "artifacts/repair-pilot-named/claude-opus-5.5/cd17ffcecd61a049/request.json",
+      "response": "artifacts/repair-pilot-named/claude-opus-5.5/cd17ffcecd61a049/response.json",
+      "image_sha256": "e92c6a323b4876595d168f0f3b56b74c0c492cd39c1e66f0b68089daa5666dd9"
+    },
+    {
+      "configured_model_id": "claude-opus-5.5",
+      "example_id": "6957c7f77e311d56",
+      "prompt": "artifacts/repair-pilot-named/claude-opus-5.5/6957c7f77e311d56/prompt.txt",
+      "request": "artifacts/repair-pilot-named/claude-opus-5.5/6957c7f77e311d56/request.json",
+      "response": "artifacts/repair-pilot-named/claude-opus-5.5/6957c7f77e311d56/response.json",
+      "image_sha256": "241359c33c80553904d46c3154c541db1acc396ce3188fdeafd0ca427dc1f841"
+    },
+    {
+      "configured_model_id": "claude-opus-5.5",
+      "example_id": "dcbb2ace3ed2e70c",
+      "prompt": "artifacts/repair-pilot-named/claude-opus-5.5/dcbb2ace3ed2e70c/prompt.txt",
+      "request": "artifacts/repair-pilot-named/claude-opus-5.5/dcbb2ace3ed2e70c/request.json",
+      "response": "artifacts/repair-pilot-named/claude-opus-5.5/dcbb2ace3ed2e70c/response.json",
+      "image_sha256": "8618a45e7d9f26dcd9bacc3bce8168104435a8c978688ad116370441c8ef92a1"
+    },
+    {
+      "configured_model_id": "claude-opus-5.5",
+      "example_id": "6309a98518df93bf",
+      "prompt": "artifacts/repair-pilot-named/claude-opus-5.5/6309a98518df93bf/prompt.txt",
+      "request": "artifacts/repair-pilot-named/claude-opus-5.5/6309a98518df93bf/request.json",
+      "response": "artifacts/repair-pilot-named/claude-opus-5.5/6309a98518df93bf/response.json",
+      "image_sha256": "76bdad5d26701d9505b0e06539c96aa6727886318cfb92af3040c08cbaed1083"
+    },
+    {
+      "configured_model_id": "claude-opus-5.5",
+      "example_id": "1e58d756c9970d95",
+      "prompt": "artifacts/repair-pilot-named/claude-opus-5.5/1e58d756c9970d95/prompt.txt",
+      "request": "artifacts/repair-pilot-named/claude-opus-5.5/1e58d756c9970d95/request.json",
+      "response": "artifacts/repair-pilot-named/claude-opus-5.5/1e58d756c9970d95/response.json",
+      "image_sha256": "0a86dc834cc04a5f99a8549530237e82e037a279e76b4b8eb2af54564655ae52"
+    }
+  ]
+}

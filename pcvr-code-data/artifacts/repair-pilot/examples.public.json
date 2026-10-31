@@ -1,0 +1,528 @@
+{
+  "schema_version": 1,
+  "instructions": "Identify all valid final trolley placements and all cheapest valid placements. Report every candidate's violations using target, destination, exit, furniture, boundary. Report no_solution when none is valid. A candidate can violate several constraints.",
+  "assumptions": [
+    "Overhead illustrations encode a 2D, axis-aligned rectangle world.",
+    "Blue dotted TARGET, DESTINATION and EXIT zones are exact operational clearance regions.",
+    "All three zones must be clear after relocation; furniture must also remain clear.",
+    "Dashed A-F boxes show the entire final trolley footprint; the drawn trolley is its initial state.",
+    "Strict positive-area overlap is a violation; boundary contact is allowed.",
+    "All furniture is fixed. Only the trolley moves, without rotation; staying costs zero.",
+    "Relocation is an abstract placement action: its transit path is not evaluated.",
+    "Cost is Manhattan displacement in diagram units, not measured physical effort.",
+    "Grasping, door sweeps, dynamics and visibility are outside this formal task."
+  ],
+  "response_fields": [
+    "example_id",
+    "valid_interventions",
+    "minimum_cost_interventions",
+    "no_solution",
+    "candidate_violations"
+  ],
+  "examples": [
+    {
+      "example_id": "8b8bfc0d612b24a9",
+      "family": "kitchen",
+      "image": "images/8b8bfc0d612b24a9.png",
+      "sha256": "ac238c0c4192437561146274b115316d3cb3a95d581ae8548669f904ceff02eb",
+      "goal": "Retrieve the orange mug and put it on the countertop.",
+      "plan": [
+        "Access the target fixture",
+        "Retrieve the target object",
+        "Place it on the destination surface"
+      ],
+      "preservation_requirements": [
+        "Keep destination access clear",
+        "Keep the exit lane clear"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "A",
+          "cost": 0
+        },
+        {
+          "candidate_id": "B",
+          "cost": 700
+        },
+        {
+          "candidate_id": "C",
+          "cost": 1225
+        },
+        {
+          "candidate_id": "D",
+          "cost": 385
+        },
+        {
+          "candidate_id": "E",
+          "cost": 565
+        },
+        {
+          "candidate_id": "F",
+          "cost": 855
+        }
+      ]
+    },
+    {
+      "example_id": "c88f2181037862af",
+      "family": "kitchen",
+      "image": "images/c88f2181037862af.png",
+      "sha256": "b0cb6098649e5d449af0d47f4686fff0d909bbed3ed0579849bf68d812da957b",
+      "goal": "Retrieve the orange mug and put it on the countertop.",
+      "plan": [
+        "Access the target fixture",
+        "Retrieve the target object",
+        "Place it on the destination surface"
+      ],
+      "preservation_requirements": [
+        "Keep destination access clear",
+        "Keep the exit lane clear"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "A",
+          "cost": 0
+        },
+        {
+          "candidate_id": "B",
+          "cost": 700
+        },
+        {
+          "candidate_id": "C",
+          "cost": 1225
+        },
+        {
+          "candidate_id": "D",
+          "cost": 385
+        },
+        {
+          "candidate_id": "E",
+          "cost": 565
+        },
+        {
+          "candidate_id": "F",
+          "cost": 855
+        }
+      ]
+    },
+    {
+      "example_id": "e3304d31fa10d720",
+      "family": "kitchen",
+      "image": "images/e3304d31fa10d720.png",
+      "sha256": "b6606930307c6da179f8d5f4305e2bc4a7fe37362c120b08344d91d1da9ec6e3",
+      "goal": "Retrieve the orange mug and put it on the countertop.",
+      "plan": [
+        "Access the target fixture",
+        "Retrieve the target object",
+        "Place it on the destination surface"
+      ],
+      "preservation_requirements": [
+        "Keep destination access clear",
+        "Keep the exit lane clear"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "A",
+          "cost": 0
+        },
+        {
+          "candidate_id": "B",
+          "cost": 700
+        },
+        {
+          "candidate_id": "C",
+          "cost": 1225
+        },
+        {
+          "candidate_id": "D",
+          "cost": 385
+        },
+        {
+          "candidate_id": "E",
+          "cost": 565
+        },
+        {
+          "candidate_id": "F",
+          "cost": 855
+        }
+      ]
+    },
+    {
+      "example_id": "840f980ccf66a5c1",
+      "family": "kitchen",
+      "image": "images/840f980ccf66a5c1.png",
+      "sha256": "472e1fada37a49c1c0a24b6dc428957e2af961ca9873beda50823e782eee1154",
+      "goal": "Retrieve the orange mug and put it on the countertop.",
+      "plan": [
+        "Access the target fixture",
+        "Retrieve the target object",
+        "Place it on the destination surface"
+      ],
+      "preservation_requirements": [
+        "Keep destination access clear",
+        "Keep the exit lane clear"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "A",
+          "cost": 0
+        },
+        {
+          "candidate_id": "B",
+          "cost": 700
+        },
+        {
+          "candidate_id": "C",
+          "cost": 1225
+        },
+        {
+          "candidate_id": "D",
+          "cost": 385
+        },
+        {
+          "candidate_id": "E",
+          "cost": 565
+        },
+        {
+          "candidate_id": "F",
+          "cost": 855
+        }
+      ]
+    },
+    {
+      "example_id": "8a0f125220ed20ef",
+      "family": "workshop",
+      "image": "images/8a0f125220ed20ef.png",
+      "sha256": "cd3c590bd91d8b322f5d448fc08f3474730f29eb19d0e159a4fed20d5dbc94f8",
+      "goal": "Retrieve the orange drill and put it on the workbench.",
+      "plan": [
+        "Access the target fixture",
+        "Retrieve the target object",
+        "Place it on the destination surface"
+      ],
+      "preservation_requirements": [
+        "Keep destination access clear",
+        "Keep the exit lane clear"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "A",
+          "cost": 565
+        },
+        {
+          "candidate_id": "B",
+          "cost": 855
+        },
+        {
+          "candidate_id": "C",
+          "cost": 0
+        },
+        {
+          "candidate_id": "D",
+          "cost": 700
+        },
+        {
+          "candidate_id": "E",
+          "cost": 1225
+        },
+        {
+          "candidate_id": "F",
+          "cost": 385
+        }
+      ]
+    },
+    {
+      "example_id": "c91fb26e930304b3",
+      "family": "workshop",
+      "image": "images/c91fb26e930304b3.png",
+      "sha256": "fa246aad735da43a7785a1a4d71548ff0dca6c7886e0da7984e516196b7a3b23",
+      "goal": "Retrieve the orange drill and put it on the workbench.",
+      "plan": [
+        "Access the target fixture",
+        "Retrieve the target object",
+        "Place it on the destination surface"
+      ],
+      "preservation_requirements": [
+        "Keep destination access clear",
+        "Keep the exit lane clear"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "A",
+          "cost": 565
+        },
+        {
+          "candidate_id": "B",
+          "cost": 855
+        },
+        {
+          "candidate_id": "C",
+          "cost": 0
+        },
+        {
+          "candidate_id": "D",
+          "cost": 700
+        },
+        {
+          "candidate_id": "E",
+          "cost": 1225
+        },
+        {
+          "candidate_id": "F",
+          "cost": 385
+        }
+      ]
+    },
+    {
+      "example_id": "00b26311761f5323",
+      "family": "workshop",
+      "image": "images/00b26311761f5323.png",
+      "sha256": "2df1e691623a1053271020b4e6119ebd351c51511b603a8079c036632a681357",
+      "goal": "Retrieve the orange drill and put it on the workbench.",
+      "plan": [
+        "Access the target fixture",
+        "Retrieve the target object",
+        "Place it on the destination surface"
+      ],
+      "preservation_requirements": [
+        "Keep destination access clear",
+        "Keep the exit lane clear"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "A",
+          "cost": 565
+        },
+        {
+          "candidate_id": "B",
+          "cost": 855
+        },
+        {
+          "candidate_id": "C",
+          "cost": 0
+        },
+        {
+          "candidate_id": "D",
+          "cost": 700
+        },
+        {
+          "candidate_id": "E",
+          "cost": 1225
+        },
+        {
+          "candidate_id": "F",
+          "cost": 385
+        }
+      ]
+    },
+    {
+      "example_id": "cd17ffcecd61a049",
+      "family": "workshop",
+      "image": "images/cd17ffcecd61a049.png",
+      "sha256": "e92c6a323b4876595d168f0f3b56b74c0c492cd39c1e66f0b68089daa5666dd9",
+      "goal": "Retrieve the orange drill and put it on the workbench.",
+      "plan": [
+        "Access the target fixture",
+        "Retrieve the target object",
+        "Place it on the destination surface"
+      ],
+      "preservation_requirements": [
+        "Keep destination access clear",
+        "Keep the exit lane clear"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "A",
+          "cost": 565
+        },
+        {
+          "candidate_id": "B",
+          "cost": 855
+        },
+        {
+          "candidate_id": "C",
+          "cost": 0
+        },
+        {
+          "candidate_id": "D",
+          "cost": 700
+        },
+        {
+          "candidate_id": "E",
+          "cost": 1225
+        },
+        {
+          "candidate_id": "F",
+          "cost": 385
+        }
+      ]
+    },
+    {
+      "example_id": "6957c7f77e311d56",
+      "family": "storage",
+      "image": "images/6957c7f77e311d56.png",
+      "sha256": "241359c33c80553904d46c3154c541db1acc396ce3188fdeafd0ca427dc1f841",
+      "goal": "Retrieve the orange parcel and put it on the packing table.",
+      "plan": [
+        "Access the target fixture",
+        "Retrieve the target object",
+        "Place it on the destination surface"
+      ],
+      "preservation_requirements": [
+        "Keep destination access clear",
+        "Keep the exit lane clear"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "A",
+          "cost": 1225
+        },
+        {
+          "candidate_id": "B",
+          "cost": 385
+        },
+        {
+          "candidate_id": "C",
+          "cost": 565
+        },
+        {
+          "candidate_id": "D",
+          "cost": 855
+        },
+        {
+          "candidate_id": "E",
+          "cost": 0
+        },
+        {
+          "candidate_id": "F",
+          "cost": 700
+        }
+      ]
+    },
+    {
+      "example_id": "dcbb2ace3ed2e70c",
+      "family": "storage",
+      "image": "images/dcbb2ace3ed2e70c.png",
+      "sha256": "8618a45e7d9f26dcd9bacc3bce8168104435a8c978688ad116370441c8ef92a1",
+      "goal": "Retrieve the orange parcel and put it on the packing table.",
+      "plan": [
+        "Access the target fixture",
+        "Retrieve the target object",
+        "Place it on the destination surface"
+      ],
+      "preservation_requirements": [
+        "Keep destination access clear",
+        "Keep the exit lane clear"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "A",
+          "cost": 1225
+        },
+        {
+          "candidate_id": "B",
+          "cost": 385
+        },
+        {
+          "candidate_id": "C",
+          "cost": 565
+        },
+        {
+          "candidate_id": "D",
+          "cost": 855
+        },
+        {
+          "candidate_id": "E",
+          "cost": 0
+        },
+        {
+          "candidate_id": "F",
+          "cost": 700
+        }
+      ]
+    },
+    {
+      "example_id": "6309a98518df93bf",
+      "family": "storage",
+      "image": "images/6309a98518df93bf.png",
+      "sha256": "76bdad5d26701d9505b0e06539c96aa6727886318cfb92af3040c08cbaed1083",
+      "goal": "Retrieve the orange parcel and put it on the packing table.",
+      "plan": [
+        "Access the target fixture",
+        "Retrieve the target object",
+        "Place it on the destination surface"
+      ],
+      "preservation_requirements": [
+        "Keep destination access clear",
+        "Keep the exit lane clear"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "A",
+          "cost": 1225
+        },
+        {
+          "candidate_id": "B",
+          "cost": 385
+        },
+        {
+          "candidate_id": "C",
+          "cost": 565
+        },
+        {
+          "candidate_id": "D",
+          "cost": 855
+        },
+        {
+          "candidate_id": "E",
+          "cost": 0
+        },
+        {
+          "candidate_id": "F",
+          "cost": 700
+        }
+      ]
+    },
+    {
+      "example_id": "1e58d756c9970d95",
+      "family": "storage",
+      "image": "images/1e58d756c9970d95.png",
+      "sha256": "0a86dc834cc04a5f99a8549530237e82e037a279e76b4b8eb2af54564655ae52",
+      "goal": "Retrieve the orange parcel and put it on the packing table.",
+      "plan": [
+        "Access the target fixture",
+        "Retrieve the target object",
+        "Place it on the destination surface"
+      ],
+      "preservation_requirements": [
+        "Keep destination access clear",
+        "Keep the exit lane clear"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "A",
+          "cost": 1225
+        },
+        {
+          "candidate_id": "B",
+          "cost": 385
+        },
+        {
+          "candidate_id": "C",
+          "cost": 565
+        },
+        {
+          "candidate_id": "D",
+          "cost": 855
+        },
+        {
+          "candidate_id": "E",
+          "cost": 0
+        },
+        {
+          "candidate_id": "F",
+          "cost": 700
+        }
+      ]
+    }
+  ]
+}

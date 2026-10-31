@@ -1,0 +1,328 @@
+{
+  "examples": [
+    {
+      "example_id": "8b8bfc0d612b24a9",
+      "valid_interventions": [
+        "D",
+        "E"
+      ],
+      "minimum_cost_interventions": [
+        "D"
+      ],
+      "no_solution": false,
+      "candidate_violations": {
+        "A": [
+          "target"
+        ],
+        "B": [
+          "destination"
+        ],
+        "C": [
+          "exit"
+        ],
+        "D": [],
+        "E": [],
+        "F": [
+          "furniture"
+        ]
+      }
+    },
+    {
+      "example_id": "c88f2181037862af",
+      "valid_interventions": [
+        "D",
+        "E"
+      ],
+      "minimum_cost_interventions": [
+        "D"
+      ],
+      "no_solution": false,
+      "candidate_violations": {
+        "A": [
+          "target"
+        ],
+        "B": [
+          "destination"
+        ],
+        "C": [
+          "exit"
+        ],
+        "D": [],
+        "E": [],
+        "F": [
+          "furniture"
+        ]
+      }
+    },
+    {
+      "example_id": "e3304d31fa10d720",
+      "valid_interventions": [
+        "E"
+      ],
+      "minimum_cost_interventions": [
+        "E"
+      ],
+      "no_solution": false,
+      "candidate_violations": {
+        "A": [
+          "target"
+        ],
+        "B": [
+          "destination"
+        ],
+        "C": [
+          "exit"
+        ],
+        "D": [
+          "furniture"
+        ],
+        "E": [],
+        "F": [
+          "furniture"
+        ]
+      }
+    },
+    {
+      "example_id": "840f980ccf66a5c1",
+      "valid_interventions": [],
+      "minimum_cost_interventions": [],
+      "no_solution": true,
+      "candidate_violations": {
+        "A": [
+          "target"
+        ],
+        "B": [
+          "destination"
+        ],
+        "C": [
+          "exit"
+        ],
+        "D": [
+          "furniture"
+        ],
+        "E": [
+          "furniture"
+        ],
+        "F": [
+          "furniture"
+        ]
+      }
+    },
+    {
+      "example_id": "8a0f125220ed20ef",
+      "valid_interventions": [
+        "A",
+        "F"
+      ],
+      "minimum_cost_interventions": [
+        "F"
+      ],
+      "no_solution": false,
+      "candidate_violations": {
+        "A": [],
+        "B": [
+          "furniture"
+        ],
+        "C": [
+          "target"
+        ],
+        "D": [
+          "destination"
+        ],
+        "E": [
+          "exit"
+        ],
+        "F": []
+      }
+    },
+    {
+      "example_id": "c91fb26e930304b3",
+      "valid_interventions": [
+        "A",
+        "F"
+      ],
+      "minimum_cost_interventions": [
+        "F"
+      ],
+      "no_solution": false,
+      "candidate_violations": {
+        "A": [],
+        "B": [
+          "furniture"
+        ],
+        "C": [
+          "target"
+        ],
+        "D": [
+          "destination"
+        ],
+        "E": [
+          "exit"
+        ],
+        "F": []
+      }
+    },
+    {
+      "example_id": "00b26311761f5323",
+      "valid_interventions": [
+        "A"
+      ],
+      "minimum_cost_interventions": [
+        "A"
+      ],
+      "no_solution": false,
+      "candidate_violations": {
+        "A": [],
+        "B": [
+          "furniture"
+        ],
+        "C": [
+          "target"
+        ],
+        "D": [
+          "destination"
+        ],
+        "E": [
+          "exit"
+        ],
+        "F": [
+          "furniture"
+        ]
+      }
+    },
+    {
+      "example_id": "cd17ffcecd61a049",
+      "valid_interventions": [],
+      "minimum_cost_interventions": [],
+      "no_solution": true,
+      "candidate_violations": {
+        "A": [
+          "furniture"
+        ],
+        "B": [
+          "furniture"
+        ],
+        "C": [
+          "target"
+        ],
+        "D": [
+          "destination"
+        ],
+        "E": [
+          "exit"
+        ],
+        "F": [
+          "furniture"
+        ]
+      }
+    },
+    {
+      "example_id": "6957c7f77e311d56",
+      "valid_interventions": [
+        "B",
+        "C"
+      ],
+      "minimum_cost_interventions": [
+        "B"
+      ],
+      "no_solution": false,
+      "candidate_violations": {
+        "A": [
+          "exit"
+        ],
+        "B": [],
+        "C": [],
+        "D": [
+          "furniture"
+        ],
+        "E": [
+          "target"
+        ],
+        "F": [
+          "destination"
+        ]
+      }
+    },
+    {
+      "example_id": "dcbb2ace3ed2e70c",
+      "valid_interventions": [
+        "B",
+        "C"
+      ],
+      "minimum_cost_interventions": [
+        "B"
+      ],
+      "no_solution": false,
+      "candidate_violations": {
+        "A": [
+          "exit"
+        ],
+        "B": [],
+        "C": [],
+        "D": [
+          "furniture"
+        ],
+        "E": [
+          "target"
+        ],
+        "F": [
+          "destination"
+        ]
+      }
+    },
+    {
+      "example_id": "6309a98518df93bf",
+      "valid_interventions": [
+        "C"
+      ],
+      "minimum_cost_interventions": [
+        "C"
+      ],
+      "no_solution": false,
+      "candidate_violations": {
+        "A": [
+          "exit"
+        ],
+        "B": [
+          "furniture"
+        ],
+        "C": [],
+        "D": [
+          "furniture"
+        ],
+        "E": [
+          "target"
+        ],
+        "F": [
+          "destination"
+        ]
+      }
+    },
+    {
+      "example_id": "1e58d756c9970d95",
+      "valid_interventions": [],
+      "minimum_cost_interventions": [],
+      "no_solution": true,
+      "candidate_violations": {
+        "A": [
+          "exit"
+        ],
+        "B": [
+          "furniture"
+        ],
+        "C": [
+          "furniture"
+        ],
+        "D": [
+          "furniture"
+        ],
+        "E": [
+          "target"
+        ],
+        "F": [
+          "destination"
+        ]
+      }
+    }
+  ]
+}

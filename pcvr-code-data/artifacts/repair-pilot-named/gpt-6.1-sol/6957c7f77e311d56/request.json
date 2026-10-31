@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "instructions": "Identify all valid final trolley placements and all cheapest valid placements. Report every candidate's violations using target, destination, exit, furniture, boundary. Report no_solution when none is valid. A candidate can violate several constraints.",
+  "assumptions": [
+    "Overhead illustrations encode a 2D, axis-aligned rectangle world.",
+    "Blue dotted TARGET, DESTINATION and EXIT zones are exact operational clearance regions.",
+    "All three zones must be clear after relocation; furniture must also remain clear.",
+    "Dashed A-F boxes show the entire final trolley footprint; the drawn trolley is its initial state.",
+    "Strict positive-area overlap is a violation; boundary contact is allowed.",
+    "All furniture is fixed. Only the trolley moves, without rotation; staying costs zero.",
+    "Relocation is an abstract placement action: its transit path is not evaluated.",
+    "Cost is Manhattan displacement in diagram units, not measured physical effort.",
+    "Grasping, door sweeps, dynamics and visibility are outside this formal task."
+  ],
+  "response_fields": [
+    "example_id",
+    "valid_interventions",
+    "minimum_cost_interventions",
+    "no_solution",
+    "candidate_violations"
+  ],
+  "examples": [
+    {
+      "example_id": "6957c7f77e311d56",
+      "family": "storage",
+      "image": "artifacts/repair-pilot/images/6957c7f77e311d56.png",
+      "sha256": "241359c33c80553904d46c3154c541db1acc396ce3188fdeafd0ca427dc1f841",
+      "goal": "Retrieve the orange parcel and put it on the packing table.",
+      "plan": [
+        "Access the target fixture",
+        "Retrieve the target object",
+        "Place it on the destination surface"
+      ],
+      "preservation_requirements": [
+        "Keep destination access clear",
+        "Keep the exit lane clear"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "A",
+          "cost": 1225
+        },
+        {
+          "candidate_id": "B",
+          "cost": 385
+        },
+        {
+          "candidate_id": "C",
+          "cost": 565
+        },
+        {
+          "candidate_id": "D",
+          "cost": 855
+        },
+        {
+          "candidate_id": "E",
+          "cost": 0
+        },
+        {
+          "candidate_id": "F",
+          "cost": 700
+        }
+      ]
+    }
+  ]
+}

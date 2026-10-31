@@ -1,0 +1,9 @@
+{
+  "model": "gemma3:4b",
+  "replicate": 2,
+  "temperature": 0.7,
+  "seed": 2,
+  "example_id": "c91fb26e930304b3",
+  "seconds": 18.9,
+  "raw": "{\"candidate_violations\": {\"A\": [\"target\", \"destination\", \"exit\"], \"B\": [\"target\", \"destination\", \"exit\", \"furniture\"], \"C\": [], \"D\": [\"target\", \"destination\", \"exit\", \"furniture\", \"boundary\"], \"E\": [\"target\", \"destination\", \"exit\", \"furniture\", \"boundary\"], \"F\": []}, \"valid_interventions\": [\"C\", \"F\"], \"minimum_cost_interventions\": [\"C\", \"F\"], \"no_solution\": false}"
+}
